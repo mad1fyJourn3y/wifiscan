@@ -38,37 +38,19 @@
 ### Option A — system-wide (quick)
 
 ```bash
+# clone repo and enter it
+git clone https://github.com/mad1fyJourn3y/wifiscan.git
+cd wifiscan
+
 # install system deps
-sudo apt update && sudo apt install -y nmap python3-pip
+sudo apt update
+sudo apt install -y nmap python3-pip
 
-# install python deps
-sudo pip3 install -r requirements.txt
-
-# copy script into PATH (adjust paths if needed)
-sudo cp wifiscan /usr/local/bin/wifiscan
-sudo chmod +x /usr/local/bin/wifiscan
+# install python deps system-wide
+sudo python3 -m pip install --upgrade pip
+sudo python3 -m pip install -r requirements.txt
 ```
 
-### Option B — virtualenv (safer, recommended)
-
-```bash
-cd /path/to/wifiscan-repo
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-
-# run script inside venv (use sudo if nmap needs it)
-sudo .venv/bin/python wifiscan
-```
-
-To leave the venv:
-
-```bash
-deactivate
-```
-
----
 
 ## ▶️ Run
 
