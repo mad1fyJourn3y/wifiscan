@@ -20,8 +20,6 @@
 ## ⚙️ Requirements
 - Python 3.8+
 - `nmap` (binary) installed and in PATH: `sudo apt install nmap`
-- Python packages listed in `requirements.txt` (install with `pip3 install -r requirements.txt`)
-
 > **Note:** Some `nmap` checks require elevated privileges. Use `sudo` when running scans if you hit permission issues.
 
 ---
