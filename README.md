@@ -60,7 +60,7 @@ sudo python3 -m pip install python-nmap --break-system-packages
 sudo wifiscan
 
 # or run directly from repo
-sudo python3 /path/to/wifiscan
+sudo python3 /wifiscan/wifiscan.py
 ```
 
 **Non-interactive examples:**
