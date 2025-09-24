@@ -46,8 +46,8 @@ sudo apt update
 sudo apt install -y nmap python3-pip
 
 # install python deps system-wide
-sudo python3 -m pip install --upgrade pip setuptools wheel
-sudo python3 -m pip install python-nmap
+sudo python3 -m pip install --upgrade pip setuptools wheel --break-system-packages
+sudo python3 -m pip install python-nmap --break-system-packages
 ```
 
 
