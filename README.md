@@ -28,14 +28,13 @@
 
 ## 📁 Files in this repo
 - `wifiscan` — main executable script (make sure it has `#!/usr/bin/env python3` at top and is executable)
-- `requirements.txt` — Python dependencies
 - `README.md` (this file)
 
 ---
 
 ## 💾 Install
 
-### Option A — system-wide (quick)
+### system-wide (quick)
 
 ```bash
 # clone repo and enter it
@@ -47,8 +46,8 @@ sudo apt update
 sudo apt install -y nmap python3-pip
 
 # install python deps system-wide
-sudo python3 -m pip install --upgrade pip
-sudo python3 -m pip install -r requirements.txt
+sudo python3 -m pip install --upgrade pip setuptools wheel
+sudo python3 -m pip install python-nmap
 ```
 
 
